@@ -5,24 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+ <script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | QR code component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
-<body>
+<body class="bg-slate-300">
 
-  Improve your front-end skills by building projects
+  <div class="h-screen grid grid-rows-3 place-items-center">
+    <div class="w-[20rem] h-[31.2rem] bg-white row-start-2 p-4 rounded-[1.25rem]">
 
-  Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    <img class="rounded-[1.25rem]" src="./images/image-qr-code.png" alt="dev-challenges QR Code">
+
+    <div class="flex flex-col gap-4 pt-4">
+      <div class="font-bold text-slate-900 text-xl text-center">
+        Improve your front-end skills by building projects
+      </div>
+
+      <div class="text-slate-500 text-md text-center">
+        Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+      </div>
+    </div>
+
+    </div>
+
+    
+    <div class="row-start-3 h-full flex flex-col justify-end pb-4 text-slate-500">
+      <div>
+        <span>
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        </span>
+        <span>
+          Coded by <a href="#">Enias Oliveira</a>.
+        </span>
+      </div>
+    </div>
   </div>
 </body>
 </html>
